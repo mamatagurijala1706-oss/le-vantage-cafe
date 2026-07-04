@@ -17,7 +17,9 @@
     <div class="container">
         <div class="logo">LÉ VANTAGE</div>
 
-        <nav>
+<div class="menu-toggle">☰</div>
+
+<nav id="navMenu">
             <a href="#">Home</a>
             <a href="#">Our Story</a>
             <a href="#">Menu</a>
@@ -253,6 +255,13 @@
     </div>
 
 </footer>
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("#navMenu");
 
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
 </body>
 </html>
