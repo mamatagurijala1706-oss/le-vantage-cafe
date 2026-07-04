@@ -474,16 +474,27 @@ nav.active{
     /* ABOUT */
 
     .about-container{
-        flex-direction:column;
-    }
+    flex-direction:column;
+    gap:35px;
+}
 
     .about-text{
-        text-align:center;
-    }
+    text-align:center;
+    padding:0 10px;
+}
 
     .about-text h2{
-        font-size:42px;
-    }
+    font-size:34px;
+    margin-bottom:18px;
+}
+.about-text p{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+.about-image img{
+    border-radius:18px;
+}
 
     /* MENU */
 
