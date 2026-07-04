@@ -38,6 +38,13 @@ backdrop-filter:blur(12px);
     font-size:40px;
     font-family:'Cormorant Garamond',serif;
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+    user-select:none;
+}
 
 nav a{
     color:white;
@@ -400,26 +407,45 @@ html{
 
     /* NAVBAR */
 
-    .navbar .container{
-        flex-direction:column;
-        gap:20px;
-    }
+  .navbar{
+    padding:15px 0;
+}
 
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
+.navbar .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    nav a{
-        margin:0;
-        font-size:15px;
-    }
+.logo{
+    font-size:28px;
+}
 
-    .btn{
-        display:none;
-    }
+.menu-toggle{
+    display:block;
+}
+
+.btn{
+    display:none;
+}
+
+nav{
+    display:none;
+}
+
+nav.active{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:75px;
+    left:0;
+    width:100%;
+    background:#111;
+    padding:25px;
+    gap:20px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+}
 
     /* HERO */
 
